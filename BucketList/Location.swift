@@ -14,15 +14,15 @@ struct Location: Codable, Identifiable, Equatable {
     var name: String
     var description: String
     var latitude: Double // storing these as a double to be able to use them with codable
-    var longitute: Double
+    var longitude: Double
     
     var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: latitude, longitude: longitute)
+        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
     // wtih this if else, it won't be shipped to the users app/phone
     #if DEBUG
-    static let example = Location(id: UUID(), name: "Buckingham Palace", description: "Lit by a lot of lightbulbs", latitude: 51.501, longitute: -0.141)
+    static let example = Location(id: UUID(), name: "Buckingham Palace", description: "Lit by a lot of lightbulbs", latitude: 51.501, longitude: -0.141)
     #endif
     
     

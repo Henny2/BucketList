@@ -13,6 +13,7 @@
 		402425DF2B42155A00BC9706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402425DE2B42155A00BC9706 /* Preview Assets.xcassets */; };
 		4057E5322B4CF70800DE6707 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057E5312B4CF70800DE6707 /* Location.swift */; };
 		4057E5342B4E48F700DE6707 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057E5332B4E48F700DE6707 /* EditView.swift */; };
+		4057E5362B4E50C800DE6707 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057E5352B4E50C800DE6707 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		402425DE2B42155A00BC9706 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4057E5312B4CF70800DE6707 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4057E5332B4E48F700DE6707 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		4057E5352B4E50C800DE6707 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				402425D72B42155800BC9706 /* BucketListApp.swift */,
 				402425D92B42155800BC9706 /* ContentView.swift */,
 				4057E5332B4E48F700DE6707 /* EditView.swift */,
+				4057E5352B4E50C800DE6707 /* Result.swift */,
 				4057E5312B4CF70800DE6707 /* Location.swift */,
 				402425DB2B42155A00BC9706 /* Assets.xcassets */,
 				402425DD2B42155A00BC9706 /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				402425DA2B42155800BC9706 /* ContentView.swift in Sources */,
+				4057E5362B4E50C800DE6707 /* Result.swift in Sources */,
 				4057E5322B4CF70800DE6707 /* Location.swift in Sources */,
 				4057E5342B4E48F700DE6707 /* EditView.swift in Sources */,
 				402425D82B42155800BC9706 /* BucketListApp.swift in Sources */,
