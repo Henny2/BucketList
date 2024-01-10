@@ -10,7 +10,7 @@ import MapKit
 
 
 struct Location: Codable, Identifiable, Equatable {
-    let id: UUID
+    var id: UUID // meed to make this mutable to be able to show updates to properties on the map
     var name: String
     var description: String
     var latitude: Double // storing these as a double to be able to use them with codable
