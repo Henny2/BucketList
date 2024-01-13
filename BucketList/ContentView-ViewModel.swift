@@ -18,7 +18,11 @@ extension ContentView {
     class ViewModel {
         private(set) var locations : [Location]
         var selectedPlace: Location?
-        var isUnlocked = true 
+        var isUnlocked = false
+        
+        var BiometricsAlerIsShown = false 
+        var BiometricsAlertTitle = "There was an issue with FaceID"
+        var BiometricsAlertMessage = ""
         
         var isStandardMode : Bool = true
         
@@ -77,11 +81,13 @@ extension ContentView {
                     if success {
                         self.isUnlocked = true
                     } else {
-                            // error
+                        self.BiometricsAlertMessage = "Try again, your face was not recognized."
+                        self.BiometricsAlerIsShown = true
                     }
                 }
             } else {
-                // no biometrics
+                BiometricsAlertMessage = "Your Phone does not support Face ID :("
+                BiometricsAlerIsShown = true
             }
         }
     }

@@ -70,7 +70,11 @@ struct ContentView: View {
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(.capsule)
+                .alert(viewModel.BiometricsAlertTitle, isPresented: $viewModel.BiometricsAlerIsShown){} message: {
+                    Text(viewModel.BiometricsAlertMessage)
+                }
         }
+            
     }
 }
 
