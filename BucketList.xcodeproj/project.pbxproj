@@ -14,6 +14,7 @@
 		4057E5322B4CF70800DE6707 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057E5312B4CF70800DE6707 /* Location.swift */; };
 		4057E5342B4E48F700DE6707 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057E5332B4E48F700DE6707 /* EditView.swift */; };
 		4057E5362B4E50C800DE6707 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057E5352B4E50C800DE6707 /* Result.swift */; };
+		4057E5382B50D0A500DE6707 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057E5372B50D0A500DE6707 /* ContentView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4057E5312B4CF70800DE6707 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4057E5332B4E48F700DE6707 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		4057E5352B4E50C800DE6707 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4057E5372B50D0A500DE6707 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentView-ViewModel.swift"; path = "BucketList/ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		402425CB2B42155800BC9706 = {
 			isa = PBXGroup;
 			children = (
+				4057E5372B50D0A500DE6707 /* ContentView-ViewModel.swift */,
 				402425D62B42155800BC9706 /* BucketList */,
 				402425D52B42155800BC9706 /* Products */,
 			);
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				402425DA2B42155800BC9706 /* ContentView.swift in Sources */,
+				4057E5382B50D0A500DE6707 /* ContentView-ViewModel.swift in Sources */,
 				4057E5362B4E50C800DE6707 /* Result.swift in Sources */,
 				4057E5322B4CF70800DE6707 /* Location.swift in Sources */,
 				4057E5342B4E48F700DE6707 /* EditView.swift in Sources */,
