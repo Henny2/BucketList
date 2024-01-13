@@ -14,16 +14,6 @@ struct ContentView: View {
     
     @State private var viewModel = ViewModel()
     
-    @State private var isStandardMode : Bool = true
-    var mapMode : MapStyle {
-        if isStandardMode {
-            return .standard
-        }
-        else {
-            return .hybrid
-        }
-    }
-    
     var body: some View {
         if viewModel.isUnlocked {
             MapReader { proxy in
@@ -31,7 +21,7 @@ struct ContentView: View {
                     Spacer()
                     Spacer()
                     Button("Change Map Style"){
-                        isStandardMode.toggle()
+                        viewModel.isStandardMode.toggle()
                     }.padding(.horizontal)
                 }
                     
@@ -51,14 +41,14 @@ struct ContentView: View {
                         }
                     }
                 }
-                .mapStyle(mapMode)
+                .mapStyle(viewModel.mapMode)
                 .onTapGesture { position in
                     if let coordinate = proxy.convert(position, from: .local) {
                         viewModel.addLocation(at: coordinate)
                     }
                 }
                 .onLongPressGesture {
-                    isStandardMode.toggle()
+                    viewModel.isStandardMode.toggle()
                 }
                 // previously we used this version of sheet
                 //                .sheet(isPresented: , content: {

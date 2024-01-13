@@ -8,6 +8,7 @@ import CoreLocation // to get CLLocationCoordinate2D
 import Foundation
 import LocalAuthentication
 import MapKit
+import SwiftUI
 // MVVM Architecture strategy
 // new class that manages our data on behalf of ContentView
 // viewModel for contentview so making it an extension
@@ -18,6 +19,17 @@ extension ContentView {
         private(set) var locations : [Location]
         var selectedPlace: Location?
         var isUnlocked = true 
+        
+        var isStandardMode : Bool = true
+        
+        var mapMode : MapStyle {
+            if isStandardMode {
+                return .standard
+            }
+            else {
+                return .hybrid
+            }
+        }
         
         let savePath = URL.documentsDirectory.appending(path: "SavedPlaces")
         
