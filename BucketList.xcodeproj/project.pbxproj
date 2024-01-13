@@ -26,7 +26,7 @@
 		4057E5312B4CF70800DE6707 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4057E5332B4E48F700DE6707 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		4057E5352B4E50C800DE6707 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		4057E5372B50D0A500DE6707 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentView-ViewModel.swift"; path = "BucketList/ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		4057E5372B50D0A500DE6707 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,6 @@
 		402425CB2B42155800BC9706 = {
 			isa = PBXGroup;
 			children = (
-				4057E5372B50D0A500DE6707 /* ContentView-ViewModel.swift */,
 				402425D62B42155800BC9706 /* BucketList */,
 				402425D52B42155800BC9706 /* Products */,
 			);
@@ -60,6 +59,7 @@
 		402425D62B42155800BC9706 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				4057E5372B50D0A500DE6707 /* ContentView-ViewModel.swift */,
 				402425D72B42155800BC9706 /* BucketListApp.swift */,
 				402425D92B42155800BC9706 /* ContentView.swift */,
 				4057E5332B4E48F700DE6707 /* EditView.swift */,
@@ -288,8 +288,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
+				DEVELOPMENT_TEAM = 79BXDJ3TV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to unlock places!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,8 +318,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
+				DEVELOPMENT_TEAM = 79BXDJ3TV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to unlock places!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
