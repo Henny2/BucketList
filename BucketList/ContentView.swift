@@ -14,9 +14,27 @@ struct ContentView: View {
     
     @State private var viewModel = ViewModel()
     
+    @State private var isStandardMode : Bool = true
+    var mapMode : MapStyle {
+        if isStandardMode {
+            return .standard
+        }
+        else {
+            return .hybrid
+        }
+    }
+    
     var body: some View {
         if viewModel.isUnlocked {
             MapReader { proxy in
+                HStack{
+                    Spacer()
+                    Spacer()
+                    Button("Change Map Style"){
+                        isStandardMode.toggle()
+                    }.padding(.horizontal)
+                }
+                    
                 Map(initialPosition: startPosition){
                     ForEach(viewModel.locations) { location in
                         Annotation(location.name, coordinate: location.coordinate){
@@ -33,10 +51,14 @@ struct ContentView: View {
                         }
                     }
                 }
+                .mapStyle(mapMode)
                 .onTapGesture { position in
                     if let coordinate = proxy.convert(position, from: .local) {
                         viewModel.addLocation(at: coordinate)
                     }
+                }
+                .onLongPressGesture {
+                    isStandardMode.toggle()
                 }
                 // previously we used this version of sheet
                 //                .sheet(isPresented: , content: {
@@ -50,6 +72,7 @@ struct ContentView: View {
                         
                     }
                 }
+                
             }
         } else {
             Button("Unlock places", action: viewModel.authenticate)
